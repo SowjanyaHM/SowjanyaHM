@@ -1,0 +1,37 @@
+{
+  "name": "automation",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "license": "MIT",
+  "scripts": {
+    "build-project": "node ./src/index.js",
+    "build-report": "node ./src/report.js",
+    "start": "npm run build-project && npm run build-report"
+  },
+  "devDependencies": {
+    "cypress": "^9.5.2"
+  },
+  "dependencies": {
+    "@sendgrid/mail": "^7.6.2",
+    "axios": "^0.26.1",
+    "cheerio": "^1.0.0-rc.10",
+    "date-fns": "^2.28.0",
+    "exceljs": "^4.3.0",
+    "get-port": "^6.1.2",
+    "lodash": "^4.17.21",
+    "nodemailer": "^6.7.3",
+    "nodemailer-sendgrid": "^1.0.3",
+    "nodemailer-sendgrid-transport": "^0.2.0",
+    "nodemailer-smtp-transport": "^2.7.4",
+    "npm": "^8.5.5",
+    "p-queue": "^7.2.0",
+    "puppeteer": "^13.5.1",
+    "puppeteer-cluster": "^0.23.0",
+    "puppeteer-extra": "^3.2.3",
+    "puppeteer-extra-plugin-stealth": "^2.9.0",
+    "xlsx": "^0.18.4",
+    "xml2js": "^0.4.23",
+    "xml2json": "^0.12.0"
+  }
+}
